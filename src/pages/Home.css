@@ -1,0 +1,198 @@
+/* General container */
+.main-container {
+  padding: 2rem;
+  background: linear-gradient(to right, #eef2f7, #f7f9fc);
+  min-height: 100vh;
+}
+
+/* Card styling */
+.enhanced-card {
+  background-color: #ffffff;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.enhanced-card:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.card-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 1.5rem;
+}
+
+.card-subtitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2b6cb0;
+  margin-bottom: 1rem;
+}
+
+/* Filter section */
+.filter-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+/* Calendar styling */
+.calendar-input .p-inputtext {
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  border: 1px solid #cbd5e0;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.calendar-input .p-inputtext:focus {
+  border-color: #4299e1;
+  box-shadow: 0 0 0 2px rgba(66, 153, 225, 0.2);
+}
+
+/* Submit Button */
+.p-button {
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 10px;
+}
+
+/* DataTable enhancements */
+.p-datatable {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+  font-size: 0.95rem;
+  background: white;
+}
+
+.p-datatable-header {
+  background-color: #f7fafc;
+  padding: 1rem;
+  font-weight: 600;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.p-datatable-thead > tr > th {
+  background-color: #f1f5f9;
+  color: #2d3748;
+  font-weight: 600;
+  padding: 1rem;
+}
+
+.p-datatable-tbody > tr > td {
+  padding: 1rem;
+}
+
+.p-datatable-tbody > tr:hover {
+  background-color: #edf2f7;
+}
+
+.p-paginator {
+  padding: 1rem;
+  background-color: #f9fafb;
+  border-top: 1px solid #e2e8f0;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+
+/* Force a clean white background for the calendar popup */
+.p-datepicker {
+  background-color: #ffffff !important;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Also ensure table inside the popup has no background tint */
+.p-datepicker table {
+  background-color: transparent !important;
+}
+
+/* Ensure each date cell background is white unless hovered or selected */
+.p-datepicker td span {
+  background-color: #ffffff !important;
+  border-radius: 12px;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Hover effect */
+.p-datepicker td span:not(.p-disabled):hover {
+  background-color: #edf2f7 !important;
+}
+
+/* Selected date */
+.p-datepicker td span.p-highlight {
+  background-color: #3182ce !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 6px rgba(49, 130, 206, 0.4);
+}
+
+/* Custom Dropdown Container */
+.custom-dropdown .p-dropdown {
+  border-radius: 10px;
+  padding: 0.25rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #cbd5e0;
+  transition: border-color 0.3s ease;
+}
+
+/* Dropdown focus */
+.custom-dropdown .p-dropdown.p-focus {
+  border-color: #3182ce;
+  box-shadow: 0 0 0 2px rgba(49, 130, 206, 0.2);
+}
+
+/* Dropdown panel */
+.p-dropdown-panel {
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
+}
+
+/* Dropdown items */
+.p-dropdown-item {
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  transition: background 0.2s;
+}
+
+.p-dropdown-item:hover {
+  background-color: #ebf8ff;
+  color: #2c5282;
+}
+
+/* Active item */
+.p-dropdown-item.p-highlight {
+  background-color: #3182ce;
+  color: #ffffff;
+}
+
+
+.dashboard-metrics {
+  display: flex;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+.kpi-card {
+  flex: 1;
+  padding: 1rem;
+  background: #f1f5f9;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.chart-section {
+  margin-top: 2rem;
+}
+.mt-6 {
+  margin-top: 2rem;
+}

@@ -1,0 +1,98 @@
+/* Main container padding */
+.p-6 {
+  padding: 2rem;
+  background-color: #f8fafc;
+}
+
+/* Card component styling */
+.card {
+  background-color: #ffffff;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.card h2,
+.card h3 {
+  margin-bottom: 1rem;
+  color: #2d3748;
+  font-weight: 600;
+}
+
+/* Chart styling */
+.p-chart {
+  margin: 1.5rem auto;
+}
+
+/* Dropdowns and multiselects */
+.p-dropdown,
+.p-multiselect {
+  border-radius: 8px;
+  min-width: 220px;
+}
+
+.p-dropdown-label,
+.p-multiselect-label {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.p-dropdown-item,
+.p-multiselect-item {
+  padding: 0.75rem 1rem;
+}
+
+/* Responsive chart layout */
+@media (max-width: 768px) {
+  .p-chart {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+/* DataTable enhancements */
+.p-datatable {
+  font-size: 0.95rem;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.p-datatable-header {
+  background-color: #f1f5f9;
+  padding: 1rem;
+  font-weight: 600;
+}
+
+.p-datatable-thead > tr > th {
+  background-color: #e2e8f0;
+  padding: 1rem;
+  color: #1a202c;
+}
+
+.p-datatable-tbody > tr:hover {
+  background-color: #edf2f7;
+}
+
+/* Tab styling */
+.p-tabview-nav {
+  margin-top: 1rem;
+  background-color: #f7fafc;
+  border-radius: 12px 12px 0 0;
+}
+
+.p-tabview-nav-link {
+  padding: 0.75rem 1rem;
+  font-weight: 500;
+}
+
+.p-tabview-panel {
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 0 0 12px 12px;
+}

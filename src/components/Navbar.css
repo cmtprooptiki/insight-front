@@ -1,0 +1,25 @@
+.navbar {
+  background-color: #2b6cb0;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-list a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.nav-list .active a,
+.nav-list a:hover {
+  text-decoration: underline;
+  color: #cbd5e0;
+}

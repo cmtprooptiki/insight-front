@@ -1,0 +1,92 @@
+/* 
+
+body {
+    background: linear-gradient(-45deg, #ffffff, #057a44, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+ */
+
+  /* Full-screen background for login */
+/* .logo-container {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 100vh !important;
+  background-image: url('./Images/Untitled_design.gif') !important; 
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+} */
+
+
+/* Main container to hold both sections */
+.login-page-container {
+  display: flex;
+  height: 100vh;
+  background-color:#3730a3 var(--tw-gradient-to-position); /* Adjust based on desired background color */
+}
+
+/* Left section for the form */
+.login-form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  background: linear-gradient(to right, #0047ff, #444444);
+  padding: 2rem;
+}
+
+/* Styling the login box */
+.login-box {
+  background: rgb(24 19 140 / 28%);
+  padding: 2rem;
+  box-shadow: 0px 0px 10px 0px rgb(237 237 237 / 91%);
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Right section for GIF */
+.login-gif-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  /* background: #00B4D8; */
+  overflow: hidden;
+}
+
+.responsive-gif {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .login-page-container {
+      flex-direction: column;
+  }
+  .login-gif-section {
+      height: 50vh;
+  }
+
+  .visible-gif{
+    display: none;
+  }
+}
